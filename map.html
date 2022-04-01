@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECSCG Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark navbar-color">
+            <div class="container">
+                <a class="navbar-brand" href="news.html">ECSCG</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="map.html">Map</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse nav-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item log-btn">
+                            <a class="btn" href="account-info.html"><i class="fa-solid fa-user"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn" href="landing.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <button class="list-view-btn">List View</button>
+        <div class="side-nav-container">
+            <div class="close-nav-div">
+                <button class="side-nav-x"><i class="fa-solid fa-x"></i></button>
+            </div>
+            <button class="side-nav-arrow"><i class="fa-solid fa-angle-right"></i></button>
+            <div class="accordion-flush" id="modulesAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTourism" aria-expanded="true" aria-controls="collapseTourism">Tourism</button>
+                    </h2>
+                    <div id="collapseTourism" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#modulesAccordion">
+                        <div class="accordion-body">
+                            <form action="">
+                                <input type="checkbox" name="shopping_mall" value="shopping_mall" id="shopping_mall">
+                                <label for="shopping_mall">Shopping Mall</label><br>
+                                <input type="checkbox" name="restaurant" value="restaurant" id="restaurant">
+                                <label for="restaurant">Restaurant</label><br>
+                                <input type="checkbox" name="amusement_park" value="amusement_park" id="amusement_park">
+                                <label for="amusement_park">Amusement Park</label><br>
+                                <input type="checkbox" name="movie_theater" value="movie_theater" id="movie_theater">
+                                <label for="movie_theater">Movie Theater</label><br>
+                                <input type="checkbox" name="park" value="park" id="park">
+                                <label for="park">Park</label><br>
+                                <input type="checkbox" name="bowling_alley" value="bowling_alley" id="bowling_allery">
+                                <label for="bowling_alley">Bowling Alley</label><br>
+                                <input type="checkbox" name="art_gallery" name="art_gallery" value="art_gallery" id="art_gallery">
+                                <label for="art_gallery">Art Gallery</label><br>
+                                <input type="checkbox" name="gas_station" value="gas_station" id="gas_station">
+                                <label for="gas_station">Gas Station</label><br>
+                                <input type="checkbox" name="atm" value="atm" id="atm">
+                                <label for="atm">ATM</label><br>
+                                <input type="checkbox" name="car_rental" value="car_rental" id="car_rental">
+                                <label for="car_rental">Car Rental</label><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEducation" aria-expanded="false" aria-controls="collapseEducation">Education</button>
+                    </h2>
+                    <div id="collapseEducation" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#modulesAccordion">
+                        <div class="accordion-body">
+                            <form action="">
+                                <input type="checkbox" name="school" value="school" id="school">
+                                <label for="school">School</label><br>
+                                <input type="checkbox" name="university" value="university" id="university">
+                                <label for="university">University</label><br>
+                                <input type="checkbox" name="library" value="tacos" id="library">
+                                <label for="library">Library</label><br>
+                                <input type="checkbox" name="book_store" value="book_store" id="book_store">
+                                <label for="book_store">Book Store</label><br>
+                                <input type="checkbox" name="bus_station" value="bus_station" id="bus_station">
+                                <label for="bus_station">Bus Station</label><br>
+                                <input type="checkbox" name="cafe" value="cafe" id="cafe">
+                                <label for="cafe">Cafe</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBusiness" aria-expanded="false" aria-controls="collapseBusiness">Business</button>
+                    </h2>
+                    <div id="collapseBusiness" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#modulesAccordion">
+                        <div class="accordion-body">
+                            <form action="">
+                                <input type="checkbox" name="bank" value="bank" id="bank">
+                                <label for="bank">Bank</label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+        <div class="list-view-div" id="place-list"></div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbrAh_nQDkNmguPj4qDiuLKAorfPhuerE&libraries=places&callback=initMap"></script>
+</body>
+</html>
