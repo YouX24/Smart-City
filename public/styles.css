@@ -16,6 +16,11 @@ main {
 }
 
 /* Top Nav */
+.ecscg-logo {
+    font-weight: normal;
+    margin: 0 1rem;
+}
+
 .navbar-color {
     background-color: #198754;
 }
@@ -43,7 +48,7 @@ main {
 
 /* Landing Page */
 .landing-main {
-    background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(images/eauclaire.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.10)), url(images/eauclaire.jpg);
     background-size: cover;
 }
 
@@ -53,7 +58,6 @@ main {
 
 .landing-message {
     height: 100%;
-    display: flex;
     align-items: center;
     color: white;
     font-size: 1.25rem;
@@ -104,6 +108,16 @@ main {
 .page-links:hover {
     color: blue;
     text-decoration: underline;
+}
+
+.signup-message {
+    color: white;
+    background-color: #FF3333;
+}
+
+.signup-error {
+    color: white;
+    background-color: #FF3333;
 }
 
 /* Map Page */
@@ -249,6 +263,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 .center-acc-info {
@@ -331,4 +346,190 @@ main {
     .article-div {
         grid-template-columns: repeat(4, 1fr);
     }
+}
+
+/* ADMIN USER VIEW */
+.user-search {
+    display: grid;
+    grid-template-columns: calc(100% - 6rem) 6rem;
+}
+
+.user-email-searchbar {
+    margin-top: 2rem;
+    width: 100%;
+    border: 1px solid black;
+    line-height: 2rem;
+}
+
+.email-search-btn {
+    margin-top: 2rem;
+    background-color: #2196F3;
+    color: white;
+}
+
+.user-table {
+    margin: 2rem auto;
+    width: 100%;
+}
+
+tr {
+    outline: 1px solid black;
+}
+
+th {
+    padding: .5rem 1rem;
+}
+
+td {
+    padding: .5rem 1rem;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+}
+
+.delete-td {
+    text-align: center;
+}
+
+/* JOBS */
+.jobs-list {
+    margin-top: 1rem;
+}
+
+.job-listing {
+    outline: 1px solid black;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.job-post-div {
+    text-align: right;
+}
+
+.job-post-btn {
+    background-color: #007bff;
+    color: white;
+    margin-top: 1rem;
+}
+
+.job-post-btn:hover {
+    color: white;
+    background-color: rgb(15, 115, 197);
+}
+
+.job-info-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.job-info-btn:hover {
+    color: white;
+    background-color: rgb(15, 115, 197);
+}
+
+.res-msg-div {
+    width: 100%;
+    text-align: center;
+}
+
+.response-message {
+    color: white;
+    background-color: #39C16C ;
+}
+
+/* JOB POST */
+.job-textbox {
+    width: 100%;
+}
+
+.center-btn-div {
+    text-align: center;
+}
+
+/* CONTACT */
+.contact-subject {
+    display: block;
+    width: 100%;
+    margin: 0rem 0 1rem 0;
+}
+
+.contact-message {
+    display: block;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.contact-btn-div {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-submit {
+    height: 2rem;
+    width: 6rem;
+    background-color: #2e8f62;
+    border: none;
+    color: white;
+}
+
+.contact-submit:hover {
+    background-color: #198754;
+    border: 2px solid black;
+}
+
+/* MODAL */
+.pass-reset-modal {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 500px;
+    height: fit-content;
+    text-align: center;
+    padding: 3rem;
+    position: relative;
+}
+
+.close {
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    right: 12px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.pass-reset-form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.pass-reset-form input {
+    display: block;
+    margin: .25rem auto;
+}
+
+.pass-reset-form input[type=submit] {
+    margin-top: 1.4rem;
+}
+
+.reset-btn-p {
+    margin: 0;
+}
+
+.job-post-form input{
+    margin-bottom: 1rem;
+}
+
+.pad-container {
+    padding: 1rem;
 }

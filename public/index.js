@@ -222,28 +222,39 @@ function getListPhoto(imgUrl, place) {
     return listViewContent
 }
 
+// MODAL POP FUNCTIONALITY
+const passResetModal = document.querySelector('.pass-reset-modal')
+const donorResetPassBtn = document.querySelector('#reset-pass-btn-donor')
+const donorCloseModal = document.querySelector('#close-modal-donor')
 
+donorResetPassBtn.addEventListener('click', () => {
+    passResetModal.style.display = "flex"
+})
 
-//////////////////////// NEWS PAGE ////////////////////////
-const articleDiv = document.querySelector(".article-div")
-const newList = document.querySelector(".news-list")
-const apiKey = '193d6b2d97a84fdc9e152357714fa66f'
+donorCloseModal.addEventListener('click', () => {
+    passResetModal.style.display = "none"
+})
 
-let url = `https://newsapi.org/v2/everything?q=eau+claire+wisconsin&apiKey=${apiKey}`
+// PASSWORD RESET VALIDATOR
+const form = document.querySelector('.pass-reset-form')
+const pass = document.querySelector('#new-password')
+const reEnterPass = document.querySelector('#re-enter-new-password')
+const signupError = document.querySelector('.signup-error')
 
-// fetch(url).then(function(res) {
-//     return res.json()
-// }).then(function(data) {
-//     console.log(data)
-//     data.articles.forEach(function(article) {
-//         articleDiv.innerHTML += 
-//         `<div class="article-el">
-//             <img src="${article.urlToImage}" class="article-img" alt="">
-//             <div class="article-body">
-//                 <h2 class="article-title">${article.title}</h3>
-//                 <p class="article-text">${article.description}</p>
-//                 <a href="${article.url}" target="_blank" class="article-link">Read More</a>
-//             </div>
-//         </div>`
-//     })
-// })
+form.addEventListener('submit', (e) => {
+    errorMessage = []
+    if (pass.value != reEnterPass.value) {
+        errorMessage.push("New password must match.")
+    }
+    if (errorMessage.length > 0) {
+        signupError.innerText = errorMessage.join('\n')
+        e.preventDefault()
+        errorMessage = []
+    }
+})
+
+// Change response message based on success or failue string
+const errMsg = document.querySelector('.response-message')
+if (errMsg.innerHTML == "Inccorect password, try again." ) {
+    errMsg.style.backgroundColor = "#FF3333"
+}
