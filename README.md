@@ -1,4 +1,4 @@
-# Smart-City
+# Smart City
 Smart City is a full-stack web-based application designed to help visitors or new residents of Eau Claire find locations within the city, view recent news, add job postings, and view new job postings in the Eau Claire area.  
 
 ## Features
